@@ -1,0 +1,37 @@
+meta {
+  name: Save Stock Master
+  type: http
+  seq: 24
+}
+
+post {
+  url: {{host}}/stockMaster/saveStockMaster
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "regrId": "Admin",
+    "regrNm": "Admin",
+    "modrNm": "Admin",
+    "modrId": "Admin",  
+    "stockItemList": [
+      {
+        "itemCd": "P10007",
+        "rsdQty": 34
+      },
+      {
+        "itemCd": "P10005",
+        "rsdQty": 34
+      },
+      {
+        "itemCd": "P10006",
+        "rsdQty": 34
+      }
+    ]
+  }
+  
+}

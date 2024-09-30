@@ -1,0 +1,20 @@
+meta {
+  name: Select Customer
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{host}}/customers/selectCustomer
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "custmTpin": {{customer_tpin}},
+    "resultDt": "20230923094734"
+  }
+}

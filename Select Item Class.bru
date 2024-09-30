@@ -1,0 +1,19 @@
+meta {
+  name: Select Item Class
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}/itemClass/selectItemsClass
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20200202151722"
+  }
+}

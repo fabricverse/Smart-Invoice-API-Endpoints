@@ -1,0 +1,19 @@
+meta {
+  name: Select Branches
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{host}}/branches/selectBranches
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20230702151722"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Save Item Composition
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{host}}/items/saveItemComposition
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20240202151722",
+    "itemCd": "P200005",
+    "cpstItemCd": "ZM2NTBA0000051", 
+    "cpstQty": 3, 
+    "regrId": "ADMIN", 
+    "regrNm": "ADMIN"
+  }
+  
+}

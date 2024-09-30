@@ -1,0 +1,41 @@
+meta {
+  name: ASYCUDA - Update Import Items
+  type: http
+  seq: 26
+}
+
+post {
+  url: {{host}}/imports/updateImportItems
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "taskCd": "4561614",
+    "dclDe": "20240426",
+    "importItemList": [
+      {
+        "itemSeq": 2,
+        "hsCd": "72149900000",
+        "itemClsCd": "5022110801",
+        "itemCd": "RW1NTXU0000006",
+        "imptItemSttsCd": "3",
+        "remark": "remark",
+        "modrNm": "Admin",
+        "modrId": "Admin"
+      }, {
+        "itemSeq": 3,
+        "hsCd": "04051000000",
+        "itemClsCd": "5022110802",
+        "itemCd": "RW1NTXU0000007",
+        "imptItemSttsCd": "4",
+        "remark": "another remark",
+        "modrNm": "Admin2",
+        "modrId": "Admin2"
+      }
+    ]
+  }
+}

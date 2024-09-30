@@ -1,0 +1,20 @@
+meta {
+  name: Select Item
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{host}}/items/selectItem
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20240202151722",
+    "itemCd": "P200005"
+  }
+}

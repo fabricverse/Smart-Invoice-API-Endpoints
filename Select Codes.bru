@@ -1,0 +1,19 @@
+meta {
+  name: Select Codes
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/code/selectCodes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": "2295829289",
+    "bhfId": "000",
+    "lastReqDt": "20240925151912"
+  }
+}

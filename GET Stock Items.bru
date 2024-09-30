@@ -1,0 +1,19 @@
+meta {
+  name: GET Stock Items
+  type: http
+  seq: 22
+}
+
+post {
+  url: {{host}}/stock/selectStockItems
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20231215000000"
+  }
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Save Customer
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{host}}/branches/saveBrancheCustomers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "custNo":"0974638770",
+    "custTpin": {{customer_tpin}},
+    "custNm":"Lii Co",
+    "adrs":null,
+    "email":null,
+    "faxNo":null,
+    "useYn":"Y",
+    "remark":null,
+    "regrNm":"Admin",
+    "regrId":"Admin",
+    "modrNm":"Admin",
+    "modrId":"Admin"
+  }
+}

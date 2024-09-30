@@ -1,0 +1,27 @@
+meta {
+  name: Initialization
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{host}}/initializer/selectInitInfo
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "dvcSrlNo": "2295829289_VSDC"
+  }
+}
+
+body:text {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "dvcSrlNo": "2295829289_VSDC"
+  }
+}

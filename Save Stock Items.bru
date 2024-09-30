@@ -1,0 +1,55 @@
+meta {
+  name: Save Stock Items
+  type: http
+  seq: 23
+}
+
+post {
+  url: {{host}}/stock/saveStockItems
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "sarNo": 1,
+    "orgSarNo": 0,
+    "regTyCd": "M",
+    "custTpin": null,
+    "custNm": null,
+    "custBhfId": null,
+    "sarTyCd": "02",
+    "ocrnDt": "20240509",
+    "totItemCnt": 1,
+    "totTaxblAmt": 86.2069,
+    "totTaxAmt": 13.7931,
+    "totAmt": 100,
+    "remark": null,
+    "regrId": "Admin",
+    "regrNm": "Admin",
+    "modrNm": "Admin",
+    "modrId": "Admin",
+    "itemList": [
+      {
+        "itemSeq": 1,
+        "itemCd": "20044",
+        "itemClsCd": "50102517",
+        "itemNm": "Soupu dedede",
+        "pkgUnitCd": "BA",
+        "qtyUnitCd": "BE",
+        "qty": 1,
+        "pkg": 1,
+        "prc": 100,
+        "splyAmt": 100,
+        "taxblAmt": 86.21,
+        "vatCatCd": "A",
+        "taxAmt": 13.79,
+        "totDcAmt": 0,
+        "totAmt": 100
+      }
+    ]
+  }
+  
+}

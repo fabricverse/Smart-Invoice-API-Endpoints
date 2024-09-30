@@ -1,0 +1,27 @@
+meta {
+  name: Save Branch User
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{host}}/branches/saveBrancheUser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20230702151722",
+    "userId":"SMART USER",
+    "userNm":"SMART USER",
+    "adrs": "Smart Invoice Street 1234",
+    "useYn":"Y",
+    "regrNm":"Admin",
+    "regrId":"Admin",
+    "modrNm":"Admin",
+    "modrId":"Admin"
+  }
+}

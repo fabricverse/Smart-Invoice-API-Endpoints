@@ -1,0 +1,20 @@
+meta {
+  name: ASYCUDA - Select Import Items
+  type: http
+  seq: 25
+}
+
+post {
+  url: {{host}}/imports/selectImportItems
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20230202151722",
+    "dclRefNum": "CX1100096839"
+  }
+}

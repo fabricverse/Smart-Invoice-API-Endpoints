@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ZRA Smart Invoice",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

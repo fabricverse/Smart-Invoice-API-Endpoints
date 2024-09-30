@@ -1,0 +1,19 @@
+meta {
+  name: Select Important Notices
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/notices/selectNotices
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20230702151722"
+  }
+}

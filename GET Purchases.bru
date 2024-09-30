@@ -1,0 +1,19 @@
+meta {
+  name: GET Purchases
+  type: http
+  seq: 20
+}
+
+post {
+  url: {{host}}/trnsPurchase/selectTrnsPurchaseSales
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "lastReqDt": "20231215000000"
+  }
+}
