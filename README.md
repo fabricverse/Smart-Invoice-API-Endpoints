@@ -2,6 +2,6 @@
 
 Usage:
 - Install [Bruno](https://www.usebruno.com/)
-- Get the files in this repo `git clone https://github.com/fabricverse/Smart-Invoice-API.git`
+- Get the files in this repo `git clone https://github.com/fabricverse/Smart-Invoice-API-Endpoints.git`
 - Simply open these files in Bruno
 - Create an environment with `{{tpin}}`, `{{host}}`, `{{bhfid}}`, `{{customer_tpin}}` and select it. 
