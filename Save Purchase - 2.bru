@@ -1,0 +1,73 @@
+meta {
+  name: Save Purchase - 2
+  type: http
+  seq: 26
+}
+
+post {
+  url: {{host}}/trnsPurchase/savePurchase
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId":"000",
+    "cisInvcNo":"cis1234",
+    "orgInvcNo": 0,
+    "spplrTpin":"1231231230",
+    "spplrBhfId":"000",
+    "spplrNm":"Adam",
+    "spplrInvcNo": 1,
+    "regTyCd":"M",
+    "pchsTyCd":"N",
+    "rcptTyCd":"P",
+    "pmtTyCd":"01",
+    "pchsSttsCd":"02",
+    "cfmDt":"20241004185913",
+    "pchsDt":"20241004",
+    "cnclReqDt":null,
+    "cnclDt":null,
+    "currencyTyCd": "ZMW",
+    "exchangeRt": "1",
+    "totItemCnt":1,
+    "totTaxblAmt":86.21,
+    "totTaxAmt":13.79,
+    "totAmt":100,
+    "remark":"",
+    "regrNm":"admin",
+    "regrId":"admin",
+    "modrNm":"admin",
+    "modrId":"admin",
+    "itemList":[{
+      "itemSeq":1,
+      "itemCd":"ZM2BGKG0000001",
+      "itemClsCd":"50102517",
+      "itemNm":"Item Name 1",
+      "bcd":null,
+      "pkgUnitCd":"BG",
+      "pkg": 1,
+      "qtyUnitCd":"KG",
+      "qty":1,
+      "prc":100.0,
+      "splyAmt":100.0,
+      "dcRt":0,
+      "dcAmt":0,
+      "taxTyCd":"A",
+      "iplCatCd":null,
+      "tlCatCd":null,
+      "exciseCatCd":null,
+      "taxblAmt":86.21,
+      "vatCatCd":"A",
+      "iplTaxblAmt":null,
+      "tlTaxblAmt":null,
+      "exciseTaxblAmt":null,
+      "taxAmt":13.79,
+      "iplAmt":null,
+      "tlAmt":null,
+      "exciseTxAmt":null,
+      "totAmt":100.0
+    }]
+  }
+}

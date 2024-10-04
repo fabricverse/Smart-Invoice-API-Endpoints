@@ -1,0 +1,46 @@
+meta {
+  name: Update Item (Service)
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{host}}/items/updateItem
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tpin": {{tpin}},
+    "bhfId": "000",
+    "itemCd":"Service Item Eg",
+    "itemClsCd":"43322555",
+    "itemTyCd":"3",
+    "itemNm":"Service Item Eg",
+    "itemStdNm":"Service Item Eg",
+    "orgnNatCd":"ZM",
+    "pkgUnitCd":"EA",
+    "qtyUnitCd":"EA",
+    "vatCatCd":null,
+    "iplCatCd":null,
+    "tlCatCd":null,
+    "exciseTxCatCd":null,
+    "btchNo":null,
+    "bcd":null,
+    "dftPrc":15,
+    "manufacturerTpin": null,
+    "manufactureritemCd": "null",
+    "rrp": "1000",
+    "svcChargeYn": "N",
+    "rentalYn": "N",
+    "addInfo":null,
+    "sftyQty":5,
+    "isrcAplcbYn":"N",
+    "useYn":"Y",
+    "regrNm":"ADMIN",
+    "regrId":"ADMIN",
+    "modrNm":"ADMIN",
+    "modrId":"ADMIN"
+  }
+}

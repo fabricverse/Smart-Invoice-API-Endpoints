@@ -1,7 +1,7 @@
 meta {
-  name: * Save Sales - Debit Note
+  name: Save Sales - Debit Note
   type: http
-  seq: 17
+  seq: 21
 }
 
 post {
@@ -11,14 +11,12 @@ post {
 }
 
 body:json {
-  
-  
   {
     "tpin": {{tpin}},
     "bhfId": "000",
     "orgInvcNo": 0,
-    "cisInvcNo": "CIS001-8",
-    "custTpin": {{customertpin}},
+    "cisInvcNo": "CIS001-18",
+    "custTpin": {{customer_tpin}},
     "custNm": "Smart Customer",
     "salesTyCd": "N",
     "rcptTyCd": "S",

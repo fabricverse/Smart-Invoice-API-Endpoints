@@ -1,7 +1,7 @@
 meta {
-  name: * Save Sales - LPO Transactions
+  name: Save Sales - Credit Note
   type: http
-  seq: 18
+  seq: 20
 }
 
 post {
@@ -11,21 +11,19 @@ post {
 }
 
 body:json {
-  
-  
   {
     "tpin": {{tpin}},
     "bhfId": "000",
     "orgInvcNo": 0,
-    "cisInvcNo": "CIS001-15",
-    "custTpin": {{customertpin}},
+    "cisInvcNo": "CIS001-23",
+    "custTpin": {{customer_tpin}},
     "custNm": "Smart Customer",
     "salesTyCd": "N",
     "rcptTyCd": "S",
     "pmtTyCd": "01",
     "salesSttsCd": "02",
-    "cfmDt": "20240508102010",
-    "salesDt": "20240703",
+    "cfmDt": "20240728102010",
+    "salesDt": "20240728",
     "stockRlsDt": null,
     "cnclReqDt": null,
     "cnclDt": null,
