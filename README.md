@@ -6,5 +6,6 @@ Usage:
 - Simply open these files in Bruno
 - Create an environment with `{{tpin}}`, `{{host}}`, `{{bhfid}}`, `{{customer_tpin}}` and select it.
 
-  <img width="1186" alt="image" src="https://github.com/user-attachments/assets/6a0dc80a-602e-4f66-9626-ad3e8ed8fe2a">
+  ![image](https://github.com/user-attachments/assets/5bef2a5f-4f5c-462c-9f68-45d39a009242)
+
  
